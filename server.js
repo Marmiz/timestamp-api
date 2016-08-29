@@ -4,6 +4,8 @@ var path = require('path');
 
 var app = express();
 
+app.set('port', (process.env.PORT || 8080));
+
 app.use(express.static(__dirname + '/public'));
 
 app.get('/:timestamp', function(req, res){
@@ -25,6 +27,6 @@ app.get('/:timestamp', function(req, res){
 });
 
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!');
+app.listen(app.get('port'), function () {
+  console.log(`Server listening on port ${app.get('port')}`);
 });

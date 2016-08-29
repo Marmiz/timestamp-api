@@ -1,14 +1,20 @@
 {
   "name": "timestamp",
   "version": "1.0.0",
-  "description": "fcc api project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "fcc api project to validate human readable timestamps and unix time format.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marmiz/timestamp-api"
   },
-  "author": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Claudio Restifo",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "moment": "^2.10.6"
   }
 }
